@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+   border: 2px solid black;
+   height: 100vh;
+   display: grid;
+   /* width: 100%; */
+   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+   grid-template-columns: 1fr 1fr 1fr; 
+}
+div{
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+}
+section div:first-child{
+    background: #f6cbcb;
+    
+}
+section div:nth-child(2){
+    background: rgb(205, 249, 205);
+    grid-column-start: 2;
+    grid-column-end: 4;
+    
+}
+section div:nth-child(3){
+    background: rgb(244, 244, 193);
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+section div:nth-child(4){
+    background: rgb(232, 160, 72);
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+section div:nth-child(5){
+    background: rgb(107, 115, 225);
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+section div:nth-child(6){
+    background: rgb(20, 124, 20);
+    grid-row-start: 5;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+section div:nth-child(7){
+    background: rgb(205, 169, 105);
+    grid-row-start: 6;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+section div:nth-child(8){
+    background: rgb(106, 62, 137);
+    
+}
+section div:nth-child(9){
+    background: rgb(119, 147, 233);
+    
+    
+}
+section div:nth-child(10){
+    background: rgb(196, 209, 80);
+    
+}
+section div:nth-child(11){
+    background: rgb(196, 209, 80);
+    
+}
+
+section div:last-child{
+    background: rgb(247, 212, 247);
+    
+}
+

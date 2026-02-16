@@ -1,0 +1,99 @@
+*{                               /* universal selector */
+    color:green;
+}
+
+.fruits{                         /* class selector*/
+    color: greenyellow;
+}
+#apple{                          /* id selector */
+    color:red;
+}
+p{                              /* tag name */
+ color:rgb(139, 138, 138)
+}
+#para1,.para2,.para3{
+    color:rgb(124, 96, 150);
+    border: 2px solid grey;
+}                             /* grouping selector*/
+ 
+div h1{                             
+    color:orangered;            /*decendent selector=all div p tage geting orange red*/
+}
+
+div > p{
+    color:blueviolet;          /*direct child=first div pragraph will change not others*/
+}
+
+div + h1{
+    color:rgb(174, 213, 248)   !important;
+}
+div + h1{
+    color:rgb(85, 168, 241);
+}
+
+div ~ h1{
+    color: chartreuse;
+}
+
+/* pseudo class */
+ul h1:first-child{
+    color: blueviolet;
+}
+
+ul p:last-child{
+    color:hotpink;
+}
+
+ul li:nth-child(3){
+    color:olive;
+}
+
+ul li:first-of-type{
+    color:rgb(220, 10, 59);
+}
+ul li:last-of-type{
+    color: navy;
+}
+ul li:nth-of-type(4){
+    color:violet;
+}
+#ho:hover{
+    color:palegreen;
+}
+#hov:hover{
+    color: rgb(252, 38, 0);
+}
+input:checked{
+    accent-color:rgb(212, 247, 13);
+}
+
+a.link{
+    color:blue;
+}
+a.visited{
+    color:indigo;
+}
+/* target attribute use to open in different tab  */
+
+/* pseudo class element */
+h2::after{
+    content:'-cascading style sheet';
+}
+
+h2::before{
+    content:'**';
+}
+
+p::selection{
+ color:pink
+}
+li::marker{
+ color: rgb(224, 17, 121);
+}
+p::first-line{
+    color: mediumorchid;
+}
+p::first-letter{
+ color: mediumslateblue;
+}
+

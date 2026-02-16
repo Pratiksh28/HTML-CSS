@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{
+            width: 20%;
+            padding: 10px;
+            
+        }
+        input,textarea{
+            padding-left: 110%;
+            height: 30px;
+        }
+        ::placeholder {
+            align-items: left;
+        }
+        select{
+            padding-left: 150%;
+            height: 30px;
+
+        }
+    </style>
+</head>
+<body>
+<HEADER style="text-align: center; font-family:'Times New Roman', Times, serif; font-size: 30px; justify-content: space-between;">
+    Reservation Form 
+</HEADER> 
+   
+<table style="height: 90px; width: 30%; margin-top: 50px; margin-left: 30%;">
+    <tr>
+        <td>
+            <label for="name">Name:</label>
+        </td>
+        <td>            <input id="name" type="text" placeholder="name" style="width:100%; padding:12px; background:#f2f2f2; border:none; border-radius:4px;">
+</td>    
+    </tr>
+    <tr>
+        <td>
+            <label for="email">Email:</label>
+        </td>
+        <td>            <input id="email" type="email" placeholder="email">
+</td>
+
+    </tr> 
+    <tr>
+        <td>
+            <label for="Room Type">Room Type:</label>
+        </td>  
+        <td>
+            <select name="room type" id="room type">
+                <option value="" disabled selected>select</option>
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="hall">Hall</option>
+            </select>            
+</td>
+    </tr>    
+    <tr>
+        <td>
+            <label for="arival date">Arival Date:</label>
+        </td> 
+        <td>            <input id="arival date" type="text">
+</td> 
+    </tr> 
+    <tr>
+        <td>
+            <label for="departure date">Departure Date:</label>
+        </td>
+        <td>            <input id="departure date" type="text">
+</td>
+    </tr>
+    <tr>
+        <td>
+            <label for="guestno">Number of Guests:</label>
+        </td>
+        <td>            <input type="number" id="guestno">
+</td>
+    </tr>
+    <tr>
+        <td><label for="">Free pickup:</label></td>
+        <td><input type="radio" value="yes" id="yes" name="free pickup" style="border:3px solid purple;">
+            <label for="yes" >yes</label>
+            <input type="radio" value="no" id="no" name="free pickup">
+            <label for="no" >no</label>
+        </td>
+    </tr>
+    <tr>
+        <td><label for="flight nu">Flight Number:</label></td>
+        <td><input type="text" id="flight nu" placeholder="Flight Number"></td>
+    </tr>
+    <tr>
+        <td><label for="special">Special Requests:</label></td>
+        <td><textarea id="special" placeholder="Type here"></textarea></td>
+    </tr>
+    <tr>
+        <td colspan="2" style="text-align: right;">
+            <button type="submit" style="background-color: rgb(43, 2, 77); color: white; margin-left: 131%;">Submit</button>
+        </td>
+</table>
+</body>
+</html>

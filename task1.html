@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>School Admission Form</title>
+    <style>
+         .container {
+            width: 50%;
+            margin: 40px auto;
+            background: #b6d7d7;
+            padding: 25px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-spacing: 15px;
+        }
+
+        td {
+            vertical-align: top;
+        }
+
+       
+
+        input, select, textarea {
+            width: 95%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            height: 60px;
+        }
+
+        .two-inputs input {
+            width: 46%;
+        }
+
+        
+        button {
+            padding: 10px 30px;
+            background-color: #2c5f5d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>School Admission Form</h2>
+
+    <table>
+        <tr>
+            <td><label>Student's Name *</label></td>
+            <td class="two-inputs">
+                <input type="text" placeholder="First">
+                <input type="text" placeholder="Last">
+            </td>
+        </tr>
+
+        <tr>
+            <td><label>Class you want to apply for *</label></td>
+            <td>
+                <input type="text" placeholder="e.g. Class 5">
+            </td>
+        </tr>
+
+        <tr>
+            <td><label>Student's DOB *</label></td>
+            <td>
+                <input type="date">
+            </td>
+        </tr>
+
+        <tr>
+            <td><label>Parent/Guardian Name *</label></td>
+            <td class="two-inputs">
+                <input type="text" placeholder="First">
+                <input type="text" placeholder="Last">
+            </td>
+        </tr>
+
+        <tr>
+            <td><label>Current Address</label></td>
+            <td>
+                <input type="text" placeholder="Street Address"><br><br>
+                <input type="text" placeholder="Street Address Line 2"><br><br>
+                <input type="text" placeholder="City"><br><br>
+                <input type="text" placeholder="Region"><br><br>
+                <input type="text" placeholder="Postal / Zip Code"><br><br>
+                <select>
+                    <option selected disabled>Country</option>
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>UK</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label>Phone</label></td>
+            <td>
+                <input type="tel" placeholder="### ### ####">
+            </td>
+        </tr>
+
+        <tr>
+            <td><label>Email *</label></td>
+            <td>
+                <input type="email" placeholder="email">
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <button type="submit">Submit</button>
+            </td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>

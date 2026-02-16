@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    nav{
+        height: 50px;
+        background-color: lavender;
+        display: flex;
+        justify-content: space-between;            
+        align-items: center;
+
+    }
+    @media screen and (max-width:740px){
+        nav{
+            height: 300px;
+            flex-direction: column;
+
+        }
+        
+    }
+    @media screen and (max-width:200px){
+        nav{
+            display: none;
+        }
+    }
+
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">career</a>
+        <a href="">login</a>
+        <a href="">registation</a>
+        <a href="">Contact</a>
+    </nav>
+</body>
+</html>

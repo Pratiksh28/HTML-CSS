@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row {
+            display: flex;
+           gap: 40px;
+        }
+        .second {
+            margin-left: 20px;
+            ;
+        }
+        input{
+            padding: 12px;
+        }
+    </style>
+</head>
+<body>
+<fieldset style="width: 30%; margin: auto; margin-top: 50px; padding: 20px; font-size: larger; background-color: rgb(228, 237, 240);">
+    <h1 style="text-align: center; margin-bottom: 50px;">Contact Us</h1>
+    <hr>
+    <form action="" >
+      
+        <section class="row">
+            <section class="second">
+                <label for="name">First Name</label>
+                <br>
+                <input type="text" id="name" name="name" required><br>
+                </section>
+            <section  style="text-align: right;">
+                <label for="last">Last Name</label>
+                <br>
+                <input type="text" id="last" name="last" required>
+            </section>
+        </section>
+
+        <br>
+
+
+         <section class="row">
+            <section class="second">
+                <label for="email">E-Mail</label>
+
+                <br>
+                <input type="email" id="email" name="email" required><br>
+                </section>
+            <section>
+                <label for="bp">Buisness phone</label>
+                <br>
+                <input type="tel" id="bp" name="bp" required>
+            </section>
+        </section>
+         
+
+        <br>
+         <section class="row">
+            <section class="second">
+                <label for="cmpyname">Company Name</label>
+                <br>
+                <input type="text" id="cmpyname" name="cmpyname" required><br>
+                </section>
+            <section>
+                <label for="jobtitle">Job Title</label>
+                <br>
+                <input type="text" id="jobtitle" name="jobtitle" required>
+            </section>
+        </section>
+
+        <br>
+<section style="margin-left: 20px;">
+        <label for="str">Street 1</label>
+        <br>
+        <input type="text" id="str" name="str" required style="width: 95%;">
+   </section>
+ <br>
+   <section class="row">
+            <section class="second">
+                <label for="city">city</label>
+                <br>
+                <input type="text" id="city" name="city" required><br>
+                </section>
+               
+            <section>
+                <label for="st">State Provience</label>
+                <br>
+                <input type="text" id="st" name="st" required>
+            </section>
+        </section>
+
+         <br>
+   <section class="row">
+            <section class="second">
+                <label for="zip">Zip/Postal Code</label>
+                <br>
+                <input type="text" id="zip" name="zop" required><br>
+                </section>
+               
+            <section>
+                <label for="cr">Country region</label>
+                <br>
+                <input type="text" id="cr" name="cr" required>
+            </section>
+        </section>
+        <br>
+        <section style="margin-left: 20px;">
+        <label for="Topic">Topic</label>
+        <br>
+        <input type="text" id="Topic" name="Topic" style="width: 95%; margin-bottom: 40%;" required>
+        </section>
+    </form>
+</fieldset>
+</body>
+</html>

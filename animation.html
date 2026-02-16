@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            border: 2pxsolid black;
+            height: 100vh;
+        }
+        div{
+            border: 2px solid yellowgreen;
+            height: 300px;
+            width:300px;
+            background: khaki;
+            animation-name:task;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            /* animation-delay: 1s; */
+            /* animation-timing-function: ease-in-out; */
+        }
+        @keyframes task {
+              10%{
+            background-color: olive;
+           } 
+           20%{
+            background-color: violet;
+           }
+           30%{
+            background-color: tomato;
+           }
+           40%{
+            background-color: turquoise;
+           }    
+           50%{
+            background-color: gold;
+           }
+           60%{
+            background-color: coral;
+           }
+           70%{
+            background-color: plum;
+           }
+           80%{
+            background-color: sienna;
+           }
+           90%{
+            background-color: lavender;
+           }
+              100%{
+                background-color: khaki;
+              }
+
+        }
+        #div2{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            animation-name: task2;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes task2 {
+            from{
+                transform:translate(100px,100px);
+                /* background-color: lightcoral; */
+                background-image: conic-gradient( yellow, green);
+                /* border-radius: 50%; */
+            }
+            to{
+                /* background-color: teal; */
+                transform:translate(1200px,-100px) rotate(4200deg);
+                
+                background-image: linear-gradient(white, black);
+            }
+            
+        }
+        #div3{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            animation-name: task3;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+            @keyframes task3 {
+            from{
+                transform:translate(1200px,-100px);
+                /* background-color: lightcoral; */
+                background-image: conic-gradient( rgb(235, 233, 243), green);
+                /* border-radius: 50%; */
+            }
+            to{
+                /* background-color: teal; */
+                transform:translate(-100px,100px) rotate(4200deg);
+                
+                background-image: linear-gradient(white, rgb(237, 25, 25));
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+    </section>
+</body>
+</html>

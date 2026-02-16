@@ -1,0 +1,88 @@
+/* Universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Element selector */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Class selector */
+.header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Descendant combinator */
+.navbar ul {
+    list-style: none;
+    background-color: #444;
+    text-align: center;
+}
+
+/* Child combinator */
+.navbar > ul > li {
+    display: inline-block;
+    margin: 10px;
+}
+
+/* Pseudo-class */
+.navbar a:hover {
+    color: orange;
+}
+
+/* Attribute selector */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+/* ID selector */
+#skills ul li {
+    background: #ddd;
+    display: inline-block;
+    padding: 8px;
+    margin: 5px;
+}
+
+/* Pseudo-element */
+h2::after {
+    content: " ▼";
+    color: orange;
+}
+
+/* Project box */
+.project {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #aaa;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

@@ -1,0 +1,66 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+section{
+    border: 5px solid khaki;
+    height: 100vh;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr;
+
+    /* column-gap: 30px;
+    row-gap: 10px; */
+    gap: 10px;
+    /* GRID-AREA:GRS/GCS/GRE/GCE <-----SHORT HAND PROPERTY */
+}
+div{
+    border: 2px solid red;
+    height: 100%;
+    width: 100%;
+
+}
+section div:first-child{
+    background-color: rgb(197, 234, 246);
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+section div:nth-child(2){
+    background-color: rgb(254, 221, 163);
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+section div:nth-child(3){
+    background-color: rgb(254, 113, 151);
+
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 5;
+} 
+section div:nth-child(4){
+    background-color: rgb(209, 255, 160);
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+section div:last-child{
+    background-color: rgb(245, 182, 182);
+    grid-row-start: 5;
+
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+    font-size: 30px;
+}
+a{
+        text-decoration: none;
+
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            border: solid green;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: start;
+            order :6;
+        }
+        div{
+            border: solid red;
+            height: 100px;
+            width: 400px;
+        
+            flex-grow: 3;
+        }
+        div:nth-child(6){
+            order :6;
+        }
+            </style>
+</head>
+<body>
+    <section>
+        <div>card1</div>
+        <div>card2</div>
+        <div>card3</div>
+        <div>card4</div>
+        <div>card5</div>
+        <div>card6</div>
+    </section>
+</body>
+</html>

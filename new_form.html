@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <fieldset style="background-color: rgb(233, 182, 239); height: 1000%; width: 40%; margin-top: 20px; border: 20px solid rgb(132, 37, 132);">
+        <legend style="font-size: 25px; color: rgb(5, 5, 5);"><b>Form</b></legend>
+
+    <form>
+        <label for="name" style="font-size: 20px; color: rgb(109, 12, 94);"><b>Name:</b></label>
+        <input type="text" id="name" placeholder="Enter name" name="username">
+<br><br>
+        <label for="number" style="font-size: 20px; color: rgb(109, 12, 94);"><b>Phone:</b></label>
+        <input type="text" id="number" placeholder="phone_nu" name="phone">
+<br><br>
+        <label for="email" style="font-size: 20px; color:rgb(109, 12, 94);"><b>Email:</b></label>
+        <input type="text" id="email" placeholder="Enter email" name="email">
+<br><br>
+<label for="" style="font-size: 20px; color: rgb(109, 12, 94);"><b>Gender  :</b></label>
+<input type="radio" name="Gender" id="male" value="male">
+<label for="male" style="font-size: 20px; color: rgb(109, 12, 94);"><b>Male</b></label>
+
+<input type="radio" id="female" name="Gender" value="female">
+<label for="female" style="font-size: 20px; color: rgb(109, 12, 94);"><b>Female</b></label>
+<br><br>
+
+<label for="" style="font-size: 20px; color: rgb(109, 12, 94);"><b>Qualification:</b></label>
+<select name="qualification" id="">select
+<option value="" disabled selected>select</option>
+<option value="BSC">BSC</option>
+<option value="MSC">MSC</option>
+<option value="MTECH">MTECH</option>
+<option value="PHD">PHD</option>  </select> 
+
+<br><br>
+<label for="" style="font-size: 20px; color: rgb(109, 12, 94);"><b>Specilization:</b></label>
+<select name="specilization" id="">
+    <option value="" disabled selected>select</option>
+
+    <optgroup label="BSC">
+<!-- <option value="" disabled selected>select</option> -->
+<option value="STATICS">staticties</option>
+<option value="CS">CS</option>
+<option value="Maths">Maths</option>
+</optgroup>
+<OPTgroup label="MTECH">
+<!-- <option value="" disabled selected>select</option> -->
+<option value="CSE">CSE</option>
+<option value="IT">IT</option>
+<option value="DS">DS</option>
+
+</OPTgroup>
+</select>
+
+<BR></BR>
+<label for="date" style="font-size: 20px; color: rgb(109, 12, 94);"style="font-size: 20px; color: rgb(109, 12, 94);"><b>Date:</b></label>
+<input type="date" id="date">
+<br><br>
+<label for="date" style="font-size: 20px; color: rgb(109, 12, 94);"><b>Birth of date:</b></label>
+<input type="date" id="date">
+<br><br>
+
+<label for="skills" style="font-size: 20px; color: rgb(109, 12, 94);"><b>Skills</b></label>
+
+<input type="checkbox" id="html" value="html" name="skills">
+<label for="html">HTML</label>
+
+<input type="checkbox" id="css" value="css" name="skills">
+<label for="css">CSS</label>
+
+<input type="checkbox" id="js" value="js" name="skills">
+<label for="js">JS</label>
+
+<input type="checkbox" id="react" value="react" name="skills">
+<label for="react">react</label>
+
+<br><br>
+<label for="file" style="font-size: 20px; color: rgb(109, 12, 94);"><b>Resume:</b></label>
+<input type="file" accept="application/pdf">
+<br><br>
+
+<label for="" style="font-size: 20px; color: rgb(109, 12, 94);"><b>Rate yourself</b></label>
+<input type="range" name="rate" max="10">
+
+<br><br>
+
+
+<label for="expriences" style="font-size: 20px; color: rgb(109, 12, 94);"><b>Expriences:</b></label>
+<select name="expriences">
+    <option disabled selected>select</option>
+    <option value="0yr">freshers</option>
+    <option value="1yr">1 year</option>
+    <option value="2yr">2 year</option>
+</select>
+    <br><br>
+
+<label for="" style="font-size: 20px; color: rgb(109, 12, 94);"><b>Address</b></label>
+<textarea name="address" rows="5" cols="20"></textarea>
+
+<br><br>
+    <button>submit</button>
+
+        </form>
+
+    </fieldset>
+    </center>    
+</body>
+</html>

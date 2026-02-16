@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            border: 2px solid black;
+            height: 95vh;
+        }
+        section div{
+            border: 2px solid rgb(12, 13, 12);
+            width: 100px;
+            height: 100px;
+            background: #25ee12;
+        }
+        div:hover{
+            background-color: rgb(237, 26, 54);
+            transition-property: all;
+            transition-duration: 2s;
+            /* transition-delay: 1s; */
+            transition-timing-function: ease-in-out;
+            /* transition-timing-function: ease-out;,ease-in,ease */
+
+            transform: rotate(1200deg);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div></div>
+    </section>
+</body>
+</html>

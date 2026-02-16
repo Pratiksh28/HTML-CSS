@@ -1,0 +1,88 @@
+<!-- selector: to target any element..
+simple selector:-tag name,id,class,universal,grouping
+combinator selector:-decendent(space){target whole tage},direct child(>){target first one},adjecent sibling(+){target first one},  general sibling(~){target all tags}
+pseudo class selector:-first chile,last child,nth child(),first-of-type,last-of-type,nth-of-type(),hover,checked, link,,visited,,active        
+pseudo element (content=" "):-after,before,first-line,selection,marker
+attribute -->
+<!-- icon tag by font_awsome the cdnjs copy lik past in head  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./selector.css">
+</head>
+<body>
+    <h1 style="color: black; text-align: center;">simple selector</h1>
+
+    <h1 id="apple" class="fruits">Apple</h1>
+    <p id="para1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat quibusdam enim tempore iste aliquam quos, eos culpa pariatur ad molestias voluptates natus ratione quia eveniet dignissimos necessitatibus ea, nihil reiciendis.</p>
+
+    <h1 class="fruits">Grapes</h1>
+    <p class="para2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, consequuntur esse culpa minima dicta dolorem dolores, dolor autem, exercitationem id ipsam. Ab amet ipsa deserunt magni debitis enim quam asperiores!</p>
+
+    <h1>Watermelon</h1>
+    <p class="para3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quam nobis optio reprehenderit quo qui? Mollitia, numquam consequatur laboriosam repudiandae obcaecati aperiam error minima ea cumque reprehenderit pariatur nihil repellendus?</p>
+
+    <h1 style="color: black; text-align: center;">combinator selector</h1>
+
+    <div>
+        <h1>decendent</h1>
+        <p>decendent used by using space and first  give parent tag name then space and child class name</p>
+        
+    </div>
+    
+    <h1>for Adjecent selector 2 nd parent</h1>
+    
+    <h1>for check general selector </h1>
+
+    <div>
+        <h2>Paragraph 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eius fugiat deleniti dolores illum libero est iusto molestiae ad in ratione at quasi et, nesciunt, exercitationem temporibus nam repellat. Iusto?</p>
+        
+        <h2>paragraph 2 </h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem libero facere ratione aspernatur fugiat id cupiditate pariatur maiores, voluptate facilis mollitia officia cumque cum. Reprehenderit placeat debitis autem voluptatem. Accusantium?</p>
+    </div>
+
+        <h1 style="color: black; text-align: center;">pseudo class selector</h1>
+        <div style="border: 2px solid grey ">
+        <ul>
+            <h1>fruits</h1>
+
+            <li>Apple</li>
+            <li>Grapes</li>
+            <li>Banana</li>
+            <li>Mango</li>
+            <li>pineapple</li>
+
+            <h2 id="ho">Hover me!!!</h2>
+
+            <label for="check">all fruits you like</label>
+            <input type="checkbox" id="check">
+
+            <button id="hov">Submit</button>
+
+
+            <p>this is last element</p>
+
+           <a href> 
+
+        </ul>
+        </div>
+
+        <h1 style="color: black; text-align: center;">pseudo element selector</h1>
+
+        <h2>CSS</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit veniam impedit culpa sint laborum excepturi aut. Nesciunt, quod laboriosam cumque eius ad deleniti perspiciatis. Expedita laudantium ad tempore optio eaque?</p>
+        <ul>
+            <li>first</li>
+            <li>second</li>
+            <li>third</li>
+            <li>four</li>
+        </ul>
+    </body>
+</html>
+
