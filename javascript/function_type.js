@@ -47,12 +47,7 @@
 // even(7);
 //  console.log(even(3))
 
-// ?ex 8 celsius to fahrenheit
-
-
-
-
-
+// ?ex 8 celsius to fahrenheit.
 
 // ? 9.check no is negetive  positive or zero
 // let num=(a)=>{
@@ -147,14 +142,134 @@
 //higher order function a function which is accepting another function as an argurment
 //call back function a functioon which acts as an argument in highter order function.
 
-function greet(a){
- console.log("avc");
-  console.log(a);
-}
-greet(call())
+// function greet(a){
+//  console.log("avc");
+//   console.log(a);
+// }
+// greet(call(),'aaa')//here aaa is not print because after call() <--function end here only..
 
-function call(){
+// function call(){
     
-    console.log('gm');
-    return 'good morning';
+//     console.log('gm');
+//     return 'good morning';
+// }
+
+// ! HOF
+// function greet(z){
+//     z();
+// }
+// greet(morning)
+// greet(morning)
+
+// function morning(){
+//     console.log('good mornign');
+// }
+// function afternoon(){
+//     console.log('good afternoon');
+// }
+// function evening(){
+//     console.log('good evening ');
+// }
+
+// !hof with name.............
+// function greet(z,sname){
+//     z(sname)
+// }
+// greet(morning,'sakshi');
+
+ // ?call back function.........
+
+// function morning(a){
+//     console.log('good morning',a);
+// }
+// function afternoon(){
+//     console.log('good afternoon');
+// }
+// function evening(){
+//     console.log('good en=vening');
+// }
+
+
+//? example
+// function add(a,b){
+//     return a+ b ;
+// }
+// function sub(a,b){
+//     return a-b ;
+// }
+// function multiple(a,b){
+//     return a*b ;
+// }
+// function divide(a,b){
+//     return a/b ;
+// }
+// function calculater(callback, a,b){
+//     return callback(a,b) ;
+// }
+// console.log(calculater(add,10,20));
+
+//? example_1
+// function num(a){
+//     console.log(a());
+// }
+// num(fun);
+// function fun(){
+//     return 10;
+// }
+
+//? example_2
+// function num(a){
+//     for(let i=1;i<=5;i++){
+//     console.log(a());
+//     }
+// }
+// num(fun);
+// function fun(){
+//     return 'hello sakshi';
+// }
+
+
+// ?example_3
+
+// function fun(a,b,c){
+// console.log(a(b,c));
+// }
+// fun(num,10,45);
+// function num(b,c){
+//  if(b>c){
+//     return 'a is greater';
+//  }
+//  else{
+//     return 'b is greater';
+//  }
+// }
+
+// ?example_4
+function fun(f,a){
+console.log(f(a));
+}
+fun(even,20);
+function even(a){
+    if(a%2==0){
+        return 'even';
+    }
+    else{
+        return 'odd';
+    }
+}
+
+// ?example_5 login simulation function 
+function fun(){
+
+}
+fun();
+function login(user,pass){
+    let username='sakshi';
+    let password='123';
+    if(user==username && pass==password){
+        return 'login successfully'
+    }
+    else{
+        return 'error';
+    }
 }
